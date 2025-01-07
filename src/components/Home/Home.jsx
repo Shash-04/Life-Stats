@@ -68,8 +68,8 @@ function Home() {
 
 
     return (
-        <div className="flex justify-center items-center h-screen    w-screen bg-gradient-to-r from-pink-500 to-blue-500 ">
-            <div className="text-center px-6 md:px-12">
+        <div className="flex justify-center items-center h-screen  w-screen bg-gradient-to-r from-pink-500 to-blue-500 ">
+            <div className="text-center ">
                 <img
                     src={imageSource}
                     className="w-36 h-36 mx-auto mb-4"
@@ -119,14 +119,14 @@ function Home() {
                     Let's Go&gt;&gt;&gt;
                 </button>
                 {daysdiff !== null && daysdiff < 0 && (
-                    <div className="mt-4 mx-4 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg text-lg shadow-lg flex items-center justify-center space-x-2">
+                    <div className="mt-4  bg-red-600 text-white font-semibold rounded-lg text-lg shadow-lg flex items-center justify-center space-x-2">
                         <span>⚠️</span>
                         <span>ERROR: Please enter a valid date</span>
                     </div>
                 )}
                 {daysdiff !== null && daysdiff >= 0 && (
                     <Link to={`/stats/${daysdiff}`}>
-                        <button className="mt-4 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg text-4xl w-5/6 shadow-md hover:bg-green-600 hover:scale-110 focus:outline-none">
+                        <button className="mt-4  bg-green-500 text-white font-semibold rounded-lg text-4xl w-5/6 shadow-md hover:bg-green-600 hover:scale-110 focus:outline-none">
                             View Stats
                         </button>
                     </Link>
