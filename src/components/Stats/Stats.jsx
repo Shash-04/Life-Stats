@@ -52,7 +52,7 @@ function Stats() {
 
     return (
         <>
-            <div className="container flex font-medium h-screen justify-center text-center font-roboto">
+            <div className="container flex font-medium h-screen justify-center text-center font-roboto sm: p-2">
                 <div className=' birth text-2xl '>
                     <img src="/birth.svg" className='h-40 mx-auto mt-20 animate-wiggle' alt="" /><br /><br />
                     A lot has happened in the {(days).toLocaleString()} days since you were born <br /> <br /> <br />
